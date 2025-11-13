@@ -3,8 +3,12 @@ print("Welcome to Rock-Paper-Scissors!")
 #Player input
 playerChoice = input("Enter your pick: Rock, Paper, or Scissors ")
 
-#Computer Output
+# Computers Output
+import random
+choices = ["Scissors", "Rock", "Paper"]
+comp_choice = random.choice(choices)
 
+print(f"Computer chose: {comp_choice}")
 
 #Victory
 playerChoice = playerChoice.lower()
@@ -35,3 +39,4 @@ match playerChoice:
                 print("You win!")
     case _:
         print("Uh... That's... not an option.")
+
